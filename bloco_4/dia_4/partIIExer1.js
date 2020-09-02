@@ -1,8 +1,11 @@
-let palavra = 'iswsrfa';
+let palavra = 'arara';
 
-if (palavra == palavra.split('').reverse().join('')) {
-    console.log(true);
-} else {
-    console.log(false);
+function verificaPalidromo() {
+    if (palavra == palavra.split('').reverse().join('')) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 }
 
+verificaPalidromo();
