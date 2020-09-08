@@ -69,20 +69,35 @@
 
         //Exercicio3
         mudaParaVerde();
-        function mudaParaBranco(){
+
+        function mudaParaBranco() {
             let mPBranco = document.getElementsByClassName('center-content')[0];
             mPBranco.style.background = 'white';
         }
         mudaParaBranco();
 
         //Exercicio4
-        function corrigirTexto(){
+        function corrigirTexto() {
             let corrigi = document.getElementsByTagName('h1')[0];
             corrigi.innerHTML = "Exercício 5.1 - Javascript";
         }
         corrigirTexto();
-        
 
+        //Exercicio5
+        function textoMaiusculo() {
+            let textoUpper = document.getElementsByTagName('p')[0];
+            textoUpper.innerHTML = textoUpper.innerHTML.toUpperCase();
+        }
+        textoMaiusculo();
+
+        //Exercicio6
+        function exibirNoConsole() {
+            let exibeP = document.getElementsByTagName('p');
+            for (let i = 0; i < exibeP.length; i++) {
+                console.log(exibeP[i].innerHTML);
+            }
+        }
+        exibirNoConsole();
     </script>
 </body>
 
