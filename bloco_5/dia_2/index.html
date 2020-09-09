@@ -95,6 +95,15 @@
         img.src = 'https://picsum.photos/200';
         div3.appendChild(img);
 
+        //Exercicio8
+        let criandoUl = document.createElement('ul');
+        div4.appendChild(criandoUl);
+        let numerosPorExtenso = ['Um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (const key in numerosPorExtenso) {
+            let criandoLi = document.createElement('li');
+            criandoLi.innerHTML = numerosPorExtenso[key];
+            criandoUl.appendChild(criandoLi);
+        }
     </script>
 </body>
 
