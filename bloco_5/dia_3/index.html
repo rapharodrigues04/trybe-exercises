@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercicio 1</title>
+    <style>
+        li {
+            padding: 5px;
+        }
+
+        .bt {
+            border: 1px solid #25692A;
+            border-radius: 4px;
+            display: inline-block;
+            cursor: pointer;
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: 13px;
+            padding: 6px 10px;
+            text-decoration: none;
+        }
+
+        #lib-button {
+            border-color: #46a7f5;
+            background: linear-gradient(to bottom, #86c6f8 5%, #46a7f5 100%);
+            box-shadow: inset 0px 1px 0px 0px #d7ecfd;
+            color: #fff;
+            text-shadow: 0px 1px 0px #528009;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        #lib-button:hover {
+            background: linear-gradient(to bottom, #46a7f5 5%, #86c6f8 100%);
+        }
+
+        .lib-button:active {
+            position: relative;
+            top: 2px;
+        }
+
+        #story{
+            color: red;
+            text-transform: uppercase;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Aplicando Imput's</h1>
+
+    <ul>
+        <li>Seu Nome: <input type="text" id="substantivo">
+        <li>Adjetivo: <input type="text" id="adjetivo">
+        <li>Nome de alguém: <input type="text" id="alguem">
+    </ul>
+
+    <button id="lib-button">Processar!</button>
+
+    <div id="story"></div>
+
+    <script>
+        function lerImput() {
+            let storyDiv = document.getElementById('story');
+            let alguem = document.getElementById('alguem').value;
+            let adjetivo = document.getElementById('adjetivo').value;
+            let substantivo = document.getElementById('substantivo').value;
+            storyDiv.innerHTML = substantivo + ' é casado com uma pessoa ' + adjetivo + ' que é a(o) ' + alguem + '!';
+        }
+
+        var botao = document.getElementById('lib-button');
+        botao.addEventListener('click', lerImput);
+    </script>
+
+</body>
+
+</html>
