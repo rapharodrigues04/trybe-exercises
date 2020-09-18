@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Formulário</legend>
+            <div>
+                <label for="idName">Nome:</label>
+                <input type="text" maxlength="40" required="required" id="idName">
+            </div>
+            <div>
+                <label for="idEmail">Email:</label>
+                <input type="email" maxlength="50" required="required" id="idEmail">
+            </div>
+            <div>
+                <label for="idCpf">CPF:</label>
+                <input type="text" maxlength="11" required="required" id="idCpf">
+            </div>
+            <div>
+                <label for="idEndereco">Endereço:</label>
+                <input type="text" maxlength="200" required="required" id="idEndereco">
+            </div>
+            <div>
+                <label for="idCidade">Cidade:</label>
+                <input type="text" maxlength="28" required="required" id="idCidade">
+            </div>
+            <div>
+                <label for="idEstado">Estado:</label>
+                <select required="required" name="estado" id="idEstado">
+                    <option selected="selected" value="">Selecione</option>
+                </select>
+            </div>
+            <div>
+                <input type="radio" name="moradia" id="moradia-1" checked="true">
+                <label for="moradia-1">Casa</label>
+                <input type="radio" name="moradia" id="moradia-2">
+                <label for="moradia-2">Apartamento</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do seu último emprego</legend>
+            <div>
+                <textarea id="" cols="30" rows="10" maxlength="1000" required="required" placeholder="Resumo do currículo aqui..."></textarea>
+            </div>
+            <div>
+                <label for="idCargo">Cargo:</label>
+                <input type="text" maxlength="40" required="required" id="idCargo">
+            </div>
+            <div>
+                <label for="idCargoDesc">Descrição do Cargo:</label>
+                <input type="text" maxlength="500" required="required" id="idCargoDesc">
+            </div>
+            <div>
+                <label for="idCargoDescr">Data de Inicio:</label>
+                <input type="date" required="required" id="idCargoDescr">
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
