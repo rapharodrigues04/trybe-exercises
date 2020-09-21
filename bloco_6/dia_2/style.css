@@ -1,0 +1,17 @@
+body {
+    margin: 20px 25% 20px 25%;
+}
+
+.buttons {
+    margin-top: 15px;
+    text-align: center;
+}
+
+label{
+    margin-top: 3px;
+}
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
