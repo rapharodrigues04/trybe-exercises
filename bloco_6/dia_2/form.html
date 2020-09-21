@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.26/css/bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+
+<body>
+    <form action="" method="get">
+
+        <h1 class="title is-1">Formulário</h1>
+
+        <div class="field">
+            <label class="label" for="idName">Nome:</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="40" required="required" id="idName">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idEmail">Email:</label>
+            <div class="control">
+                <input class="input" type="email" maxlength="50" required="required" id="idEmail">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idCpf">CPF:</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="11" required="required" id="idCpf">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idEndereco">Endereço:</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="200" required="required" id="idEndereco">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idCidade">Cidade:</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="28" required="required" id="idCidade">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idEstado">Estado:</label>
+            <div class="control">
+                <div class="select">
+                    <select required="required" name="estado" id="idEstado">
+                        <option selected="selected" value="">Selecione</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <input type="radio" name="moradia" id="moradia-1" checked>
+            <label class="radio" for="moradia-1">Casa</label>
+            <input type="radio" name="moradia" id="moradia-2">
+            <label class="radio" for="moradia-2">Apartamento</label>
+        </div>
+
+        <p>Dados do seu último emprego</p>
+        <div class="field">
+            <div class="control">
+                <textarea class="textarea" placeholder="Digite seu texto aqui..."></textarea>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idCargo">Cargo:</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="40" required="required" id="idCargo">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idCargoDesc">Descrição do Cargo:</label>
+            <div class="control">
+                <input class="input" type="text" maxlength="500" required="required" id="idCargoDesc">
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label" for="idCargoDescr">Data de Inicio:</label>
+            <div class="control">
+                <input class="input" type="text" id="idCargoDescr">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <input class="button is-primary" type="submit" value="Enviar">
+            <input class="button is-danger" type="reset" value="Limpar">
+        </div>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
