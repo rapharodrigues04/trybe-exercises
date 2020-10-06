@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0 10% 0 10%;
+}
+
+header, h1{
+    text-align: center;
+}
+
+nav ,a {
+    text-align: center;
+    padding: 10px 15px 10px 0;
+}
+
+.section-1, .section-2{
+    display: inline-block;
+}
+
+img {
+    width: 180px;
+    border-radius: 25px;
+}
+
+.img-1, .img-2, .img-3{
+    float: left;
+    margin-right: 20px;
+}
+
+.section-1 p{
+    text-align: justify;
+    margin-top: 70px;
+}
+
+.section-2 p{
+    text-align: justify;
+    margin-top: 25px;
+}
+
+footer{
+    margin-bottom: 100px;
+}
