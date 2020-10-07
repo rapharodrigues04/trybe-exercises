@@ -63,24 +63,14 @@ const books = [{
 ];
 
 const expected_result = [{
-        id: 1,
-        name: 'As Crônicas de Gelo e Fogo',
-        genre: 'Fantasia',
+        id: 6,
+        name: 'O Chamado de Cthulhu',
+        genre: 'Terror',
         author: {
-            name: 'George R. R. Martin',
-            birthYear: 1948
+            name: 'H. P. Lovecraft',
+            birthYear: 1890
         },
-        releaseYear: 1991,
-    },
-    {
-        id: 2,
-        name: 'O Senhor dos Anéis',
-        genre: 'Fantasia',
-        author: {
-            name: 'J. R. R. Tolkien',
-            birthYear: 1892,
-        },
-        releaseYear: 1954,
+        releaseYear: 1928
     },
     {
         id: 3,
@@ -88,28 +78,29 @@ const expected_result = [{
         genre: 'Ficção Científica',
         author: {
             name: 'Isaac Asimov',
-            birthYear: 1920,
+            birthYear: 1920
         },
-        releaseYear: 1951,
+        releaseYear: 1951
     },
     {
-        id: 4,
-        name: 'Duna',
-        genre: 'Ficção Científica',
+        id: 2,
+        name: 'O Senhor dos Anéis',
+        genre: 'Fantasia',
         author: {
-            name: 'Frank Herbert',
-            birthYear: 1920,
+            name: 'J. R. R. Tolkien',
+            birthYear: 1892
         },
-        releaseYear: 1965,
-    },
+        releaseYear: 1954
+    }
 ]
 
-//Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
+//Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 
-function fantasyOrScienceFiction() {
+function oldBooks() {
+    const currentYear = new Date().getFullYear();
     return books.filter(book => (
-        book.genre === 'Ficção Científica' || book.genre === 'Fantasia'
-    ))
+        book.releaseYear < currentYear - 60
+    )).sort((bookA, bookB) => bookA.releaseYear - bookB.releaseYear);
 }
 
-assert.deepEqual(fantasyOrScienceFiction(), expected_result);
+assert.deepEqual(oldBooks(), expected_result);
